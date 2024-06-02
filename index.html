@@ -1,27 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Letlotlo Malope's Portfolio</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="page">
-            <div class="logo">
-                <img src="Logo.jpg" class="icon">
-        
-            </div>
-
-            <div class="info">
-                <h3>Hi, I'm <span>Letlotlo Malope</span>.</h3>
-                <h1>WEB DESIGNER</h1>
-                <h3>Web designer and developer from Rustenburg, South Africa. <br>
-                    I create websites to do businesses do better online.</h3>
-            </div>
-
-            <div class="image">
-                <img src="ppic.jpg" class="pic">
-            </div>
+<head>
+    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="style.css"> <!-- Linking to the CSS file -->
+</head>
+<body>
+    
+    <div class="main">
+        <div class="navbar">
+            <img src="Logo.jpg" class="logo"> <!-- Logo image -->
+            <ul>
+                <li id="projects1"><a href="#">COMPLETE PROFILE</a></li> <!-- Link to the complete profile document -->
+                <li id="projects2"><a href="#">CUSTOMISED DASHBOARD PROJECT</a></li> <!-- Link to the customised dashboard project -->
+            </ul>
         </div>
-    </body>
+
+        <script>
+            // Function to redirect to the complete profile document on Google Docs
+            function goToProjects1() {
+                window.location.href = 'https://docs.google.com/document/d/1LhQ0Ae9b12ixnffhWEtY_V_Xg2mCwoZ9/edit';
+            }
+    
+            // Function to redirect to the customised dashboard project on GitHub
+            function goToProjects2() {
+                window.location.href = 'https://github.com/l3tlotlo/LETMAL383_BCL2401_GROUP_D1_LetlotloMalope__JSL09';
+            }
+    
+            // Event listeners for the project link elements
+            document.getElementById('projects1').addEventListener('click', goToProjects1); // Adds click event listener for the complete profile link
+            document.getElementById('projects2').addEventListener('click', goToProjects2); // Adds click event listener for the customised dashboard project link
+        </script>
+
+        <div class="info">
+            <h3>Hi, I'm <span>Letlotlo Malope</span>.</h3> <!-- Introduction -->
+            <h1><span>J</span>UNIOR <span>S</span>OFTWARE <span>E</span>NGINEER</h1> <!-- Profession -->
+            <h3>Web designer and developer from Rustenburg.<br> <!-- Description -->
+                I create and maintain websites and apps, allowing businesses to do better online.</h3>
+        </div>
+
+        <div class="image">
+            <img src="ppic.jpg" class="profile"> <!-- Profile picture -->
+        </div>
+    </div>
+</body>
 </html>
