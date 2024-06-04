@@ -11,25 +11,25 @@
         <div class="navbar">
             <img src="Logo.jpg" class="logo"> <!-- Logo image -->
             <ul>
-                <li id="projects1"><a href="#">COMPLETE PROFILE</a></li> <!-- Link to the complete profile document -->
-                <li id="projects2"><a href="#">CUSTOMISED DASHBOARD PROJECT</a></li> <!-- Link to the customised dashboard project -->
+                <li id="profile"><a href="#">COMPLETE PROFILE</a></li> <!-- Link to the complete profile document -->
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">MY PROJECTS</a>
+                    <div class="dropdown-content">
+                        <a href="https://github.com/l3tlotlo/LETMAL383_BCL2401_GROUP_D1_LetlotloMalope__JSL09">CUSTOMIZED DASHBOARD</a>
+                        <a href="https://github.com/l3tlotlo/l3tlotlo-LETMAL383_BCL2401_GROUP_D1_LetlotloMalope__SDF07">GROCERY APP</a>
+                    </div>
+                </li>
             </ul>
         </div>
 
         <script>
             // Function to redirect to the complete profile document on Google Docs
-            function goToProjects1() {
+            function goToFullProfile() {
                 window.location.href = 'https://docs.google.com/document/d/1LhQ0Ae9b12ixnffhWEtY_V_Xg2mCwoZ9/edit';
             }
     
-            // Function to redirect to the customised dashboard project on GitHub
-            function goToProjects2() {
-                window.location.href = 'https://github.com/l3tlotlo/LETMAL383_BCL2401_GROUP_D1_LetlotloMalope__JSL09';
-            }
-    
-            // Event listeners for the project link elements
-            document.getElementById('projects1').addEventListener('click', goToProjects1); // Adds click event listener for the complete profile link
-            document.getElementById('projects2').addEventListener('click', goToProjects2); // Adds click event listener for the customised dashboard project link
+            // Event listener for the profile link element
+            document.getElementById('profile').addEventListener('click', goToFullProfile); // Adds click event listener for the complete profile link
         </script>
 
         <div class="info">
